@@ -24,3 +24,9 @@ O agente entregou a ADR com 3 decisões claras e a spec enxuta com 5 critérios 
 ## 4. Verificação na Sessão 3 (Implement)
 
 Na Sessão 3 (nova sessão limpa recebendo apenas a ADR e a spec revisadas), conectamos os 3 cenários BDD ao arquivo de teste E2E `tests/e2e/semana6-bdd.spec.ts` exercitando a aplicação real com React, TanStack Router/Query, Axios, MSW e cliente Socket.IO. Os 3 cenários BDD passam integralmente com `npx playwright test tests/e2e/semana6-bdd.spec.ts`.
+
+## 5. Saída dos Validadores (OpenSpec, TLC e Playwright)
+
+- `python3 .claude/skills/tlc-spec-driven/scripts/validate_spec.py .specs/features/cupom-no-carrinho --strict` -> `0 error(s), 0 warning(s)`
+- `npx @fission-ai/openspec@latest validate cupom-no-carrinho` -> `Change 'cupom-no-carrinho' is valid`
+- `npx playwright test tests/e2e/semana6-bdd.spec.ts` -> `6 passed` (Desktop 1440px + Mobile 390px)
