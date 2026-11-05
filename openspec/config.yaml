@@ -1,0 +1,22 @@
+schema: spec-driven
+
+context: |
+  # Glossário: Marketplace de NFTs
+
+  ## Contexto 1: Catálogo (pasta: src/catalogo/)
+  - NFT: Obra digital colecionável exibida com galeria, informações, edições e valor de vitrine (§3 "Detalhes do NFT").
+  - Favorito: NFT marcado pelo colecionador autenticado para consulta rápida, persistido na sua conta (§3 "Favoritos devem persistir para o usuário autenticado").
+  - Disponibilidade: Quantidade de unidades ainda compráveis de uma tiragem, atualizada em tempo real (§3 e §7).
+
+  ## Contexto 2: Carrinho e Pedido (pasta: src/carrinho/)
+  - Carrinho: Seleção de itens com quantidades inteiras que sobrevive a refresh e é preservada quando o visitante autentica (§3 "Carrinho de NFTs").
+  - Cupom: Código promocional aplicado ao Carrinho para abater valor na Cotação, sujeito a validação de código inválido ou expirado (§3 "Aplicar e remover cupom").
+  - Cotação: Cálculo oficial da API contendo subtotal, desconto, taxa de rede e total em strings decimais ETH (§3 "A cotação da API é a referência para finalizar o pedido").
+
+  ## Palavra que muda de sentido entre os dois contextos
+  - Edição: no Catálogo é a tiragem exibida na vitrine; no Carrinho e Pedido é o item comercial reservado cuja disponibilidade e preço precisam ser revalidados antes da compra e congelados no recibo.
+
+  Regras:
+  - Uma change mexe em um bounded context só. Se precisar de outro, pare e pergunte.
+  - Não crie Service, Manager, Factory, Provider, Helper ou Utils.
+  - Language: pt-BR. Keep OpenSpec structural headings and SHALL/MUST keywords in English.
