@@ -1,0 +1,43 @@
+{
+  "name": "kronos-archive-nft-marketplace",
+  "private": true,
+  "version": "1.0.0",
+  "description": "KRONOS // ARCHIVE — Modular NFT Marketplace (React 18, TypeScript, TanStack Router/Query, Axios, Socket.IO, MSW, Stripe & Web3 Dual-Rail)",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 5173",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --port 4173",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test tests/unit/eth-and-engine.test.cjs tests/unit/design-system.test.cjs",
+    "test:e2e": "playwright test",
+    "ds:sync": "node scripts/sync-design-system.mjs",
+    "ds:standalone": "node scripts/build-design-system.mjs",
+    "prebuild": "npm run ds:standalone"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.59.0",
+    "@tanstack/react-router": "^1.75.0",
+    "axios": "^1.7.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "socket.io-client": "^4.8.0"
+  },
+  "devDependencies": {
+    "@mswjs/socket.io-binding": "^0.2.0",
+    "@playwright/test": "^1.48.0",
+    "@types/node": "^22.7.5",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "esbuild": "^0.21.5",
+    "msw": "^2.6.0",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.9"
+  },
+  "msw": {
+    "workerDirectory": [
+      "public"
+    ]
+  }
+}

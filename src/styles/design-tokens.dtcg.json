@@ -1,0 +1,1584 @@
+{
+  "$description": "KRONOS // ARCHIVE Design System v1.0. Fonte canônica de tokens. MIV-OFICIAL.md e DESIGN.md; extensões CSS preservam papéis e expressões fluidas.",
+  "$extensions": {
+    "archive.kronos": {
+      "version": "1.0.0",
+      "format": "DTCG 2025.10",
+      "source": [
+        "MIV-OFICIAL.md",
+        "DESIGN.md"
+      ],
+      "policy": "Primitive → Semantic → Component; zero Token Role Drift."
+    }
+  },
+  "primitive": {
+    "color": {
+      "paper": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9411764705882353,
+            0.9450980392156862,
+            0.9294117647058824
+          ],
+          "alpha": 1,
+          "hex": "#F0F1ED"
+        },
+        "$description": "Papel de Arquivo. Campo dominante, passe-partout e texto invertido. 60%.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--primitive-paper",
+            "name": "Papel de Arquivo",
+            "rgb": "240, 241, 237",
+            "oklch": "oklch(0.9563 0.0054 117.92)"
+          }
+        }
+      },
+      "plate": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.8666666666666667,
+            0.8823529411764706,
+            0.8705882352941177
+          ],
+          "alpha": 1,
+          "hex": "#DDE1DE"
+        },
+        "$description": "Cinza de Placa. Superfície técnica, skeleton e hover secundário.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--primitive-plate",
+            "name": "Cinza de Placa",
+            "rgb": "221, 225, 222",
+            "oklch": "oklch(0.9058 0.0059 153.77)"
+          }
+        }
+      },
+      "ink": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.08627450980392157,
+            0.11372549019607843,
+            0.10588235294117647
+          ],
+          "alpha": 1,
+          "hex": "#161D1B"
+        },
+        "$description": "Grafite Mineral. Texto principal, estrutura, abas ativas e versão. 30%.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--primitive-ink",
+            "name": "Grafite Mineral",
+            "rgb": "22, 29, 27",
+            "oklch": "oklch(0.2229 0.0110 176.05)"
+          }
+        }
+      },
+      "muted": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.36470588235294116,
+            0.40784313725490196,
+            0.3803921568627451
+          ],
+          "alpha": 1,
+          "hex": "#5D6861"
+        },
+        "$description": "Legenda. Texto secundário exclusivamente sobre papel.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--primitive-muted",
+            "name": "Legenda",
+            "rgb": "93, 104, 97",
+            "oklch": "oklch(0.5056 0.0174 157.83)"
+          }
+        }
+      },
+      "line": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.48627450980392156,
+            0.5333333333333333,
+            0.5019607843137255
+          ],
+          "alpha": 1,
+          "hex": "#7C8880"
+        },
+        "$description": "Linha de Controle. Bordas de inputs, seletores e botões secundários.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--primitive-line",
+            "name": "Linha de Controle",
+            "rgb": "124, 136, 128",
+            "oklch": "oklch(0.6145 0.0184 156.64)"
+          }
+        }
+      },
+      "action": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.1843137254901961,
+            0.30196078431372547,
+            0.9215686274509803
+          ],
+          "alpha": 1,
+          "hex": "#2F4DEB"
+        },
+        "$description": "Cobalto de Ação. Exclusivo CTA primário e foco de teclado. Máximo 10%.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--primitive-action",
+            "name": "Cobalto de Ação",
+            "rgb": "47, 77, 235",
+            "oklch": "oklch(0.5101 0.2377 267.72)"
+          }
+        }
+      },
+      "error": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.6196078431372549,
+            0.1803921568627451,
+            0.1411764705882353
+          ],
+          "alpha": 1,
+          "hex": "#9E2E24"
+        },
+        "$description": "Óxido de Alerta. Impedimento: cotação stale, rede, validação e conflito.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--primitive-error",
+            "name": "Óxido de Alerta",
+            "rgb": "158, 46, 36",
+            "oklch": "oklch(0.4714 0.1496 29.05)"
+          }
+        }
+      },
+      "hair": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.08627450980392157,
+            0.11372549019607843,
+            0.10588235294117647
+          ],
+          "alpha": 0.18,
+          "hex": "#161D1B"
+        },
+        "$description": "Grafite a 18%: apenas separadores decorativos; nunca borda de controle ou texto.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--primitive-hair",
+            "name": "Fio de Arquivo",
+            "rgb": "22, 29, 27 / 18%",
+            "oklch": "oklch(0.2229 0.0110 176.05 / 18%)"
+          }
+        }
+      },
+      "media-outline": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0,
+            0,
+            0
+          ],
+          "alpha": 0.16,
+          "hex": "#000000"
+        },
+        "$description": "Contorno interno técnico de mídia. Preto translúcido não é superfície.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--media-outline"
+          }
+        }
+      }
+    },
+    "font": {
+      "display": {
+        "$type": "fontFamily",
+        "$value": [
+          "Barlow Condensed",
+          "Arial Narrow",
+          "sans-serif"
+        ],
+        "$description": "Família display; papel intransferível definido no MIV.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--display"
+          }
+        }
+      },
+      "ui": {
+        "$type": "fontFamily",
+        "$value": [
+          "Manrope",
+          "Arial",
+          "sans-serif"
+        ],
+        "$description": "Família ui; papel intransferível definido no MIV.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--ui"
+          }
+        }
+      },
+      "mono": {
+        "$type": "fontFamily",
+        "$value": [
+          "IBM Plex Mono",
+          "Consolas",
+          "monospace"
+        ],
+        "$description": "Família mono; papel intransferível definido no MIV.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--mono"
+          }
+        }
+      }
+    },
+    "dimension": {
+      "unit": {
+        "$type": "dimension",
+        "$value": {
+          "value": 8,
+          "unit": "px"
+        },
+        "$description": "Módulo base.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--unit"
+          }
+        }
+      },
+      "grid": {
+        "$type": "dimension",
+        "$value": {
+          "value": 32,
+          "unit": "px"
+        },
+        "$description": "Grade de calibração fina.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--grid"
+          }
+        }
+      },
+      "grid-major": {
+        "$type": "dimension",
+        "$value": {
+          "value": 128,
+          "unit": "px"
+        },
+        "$description": "Grade de calibração mestra.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--grid-major"
+          }
+        }
+      },
+      "symbol": {
+        "$type": "dimension",
+        "$value": {
+          "value": 64,
+          "unit": "px"
+        },
+        "$description": "Grade Abertura K.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--symbol-grid"
+          }
+        }
+      },
+      "protection": {
+        "$type": "dimension",
+        "$value": {
+          "value": 16,
+          "unit": "px"
+        },
+        "$description": "Área de proteção mínima em unidades.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--symbol-protection"
+          }
+        }
+      },
+      "symbol-min": {
+        "$type": "dimension",
+        "$value": {
+          "value": 16,
+          "unit": "px"
+        },
+        "$description": "Redução absoluta: favicon.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--symbol-min"
+          }
+        }
+      },
+      "symbol-recommended": {
+        "$type": "dimension",
+        "$value": {
+          "value": 24,
+          "unit": "px"
+        },
+        "$description": "Redução recomendada em interface.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--symbol-recommended"
+          }
+        }
+      },
+      "cut": {
+        "$type": "dimension",
+        "$value": {
+          "value": 12,
+          "unit": "px"
+        },
+        "$description": "Chanfro canônico, canto superior direito.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--cut"
+          }
+        }
+      },
+      "cut-large": {
+        "$type": "dimension",
+        "$value": {
+          "value": 17,
+          "unit": "px"
+        },
+        "$description": "Variante para exposição monumental; não padrão.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--cut-large"
+          }
+        }
+      },
+      "frame-padding": {
+        "$type": "dimension",
+        "$value": {
+          "value": 8,
+          "unit": "px"
+        },
+        "$description": "Passe-partout técnico.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--frame-padding"
+          }
+        }
+      },
+      "stroke": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1,
+          "unit": "px"
+        },
+        "$description": "Espessura de borda estrutural.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--stroke"
+          }
+        }
+      },
+      "icon-stroke": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1.75,
+          "unit": "px"
+        },
+        "$description": "Traço de ícone 24 × 24.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--icon-stroke"
+          }
+        }
+      },
+      "icon-grid": {
+        "$type": "dimension",
+        "$value": {
+          "value": 24,
+          "unit": "px"
+        },
+        "$description": "Grade dos ícones.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--icon-grid"
+          }
+        }
+      },
+      "icon-node": {
+        "$type": "dimension",
+        "$value": {
+          "value": 3,
+          "unit": "px"
+        },
+        "$description": "Nó quadrado de ícone.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--icon-node"
+          }
+        }
+      },
+      "touch": {
+        "$type": "dimension",
+        "$value": {
+          "value": 44,
+          "unit": "px"
+        },
+        "$description": "Alvo mínimo KRONOS.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--touch"
+          }
+        }
+      },
+      "button-height": {
+        "$type": "dimension",
+        "$value": {
+          "value": 46,
+          "unit": "px"
+        },
+        "$description": "Altura mínima de botão.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--button-height"
+          }
+        }
+      },
+      "focus-width": {
+        "$type": "dimension",
+        "$value": {
+          "value": 3,
+          "unit": "px"
+        },
+        "$description": "Anel externo de foco.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--focus-width"
+          }
+        }
+      },
+      "focus-offset": {
+        "$type": "dimension",
+        "$value": {
+          "value": 4,
+          "unit": "px"
+        },
+        "$description": "Distância do anel.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--focus-offset"
+          }
+        }
+      },
+      "focus-gap": {
+        "$type": "dimension",
+        "$value": {
+          "value": 2,
+          "unit": "px"
+        },
+        "$description": "Anel interno em papel.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--focus-gap"
+          }
+        }
+      },
+      "gutter-min": {
+        "$type": "dimension",
+        "$value": {
+          "value": 20,
+          "unit": "px"
+        },
+        "$description": "Gutter mínimo.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--gutter-min"
+          }
+        }
+      },
+      "gutter-max": {
+        "$type": "dimension",
+        "$value": {
+          "value": 72,
+          "unit": "px"
+        },
+        "$description": "Gutter máximo.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--gutter-max"
+          }
+        }
+      },
+      "container": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1720,
+          "unit": "px"
+        },
+        "$description": "Largura máxima do arquivo.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--container"
+          }
+        }
+      },
+      "space-0": {
+        "$type": "dimension",
+        "$value": {
+          "value": 0,
+          "unit": "px"
+        },
+        "$description": "Sem espaço.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--space-0"
+          }
+        }
+      },
+      "space-1": {
+        "$type": "dimension",
+        "$value": {
+          "value": 4,
+          "unit": "px"
+        },
+        "$description": "Microespaço.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--space-1"
+          }
+        }
+      },
+      "space-2": {
+        "$type": "dimension",
+        "$value": {
+          "value": 8,
+          "unit": "px"
+        },
+        "$description": "Espaço mínimo estrutural.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--space-2"
+          }
+        }
+      },
+      "space-3": {
+        "$type": "dimension",
+        "$value": {
+          "value": 12,
+          "unit": "px"
+        },
+        "$description": "Espaço curto.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--space-3"
+          }
+        }
+      },
+      "space-4": {
+        "$type": "dimension",
+        "$value": {
+          "value": 16,
+          "unit": "px"
+        },
+        "$description": "Espaço de controles.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--space-4"
+          }
+        }
+      },
+      "space-5": {
+        "$type": "dimension",
+        "$value": {
+          "value": 20,
+          "unit": "px"
+        },
+        "$description": "Espaçamento médio do DESIGN.md.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--space-5"
+          }
+        }
+      },
+      "space-6": {
+        "$type": "dimension",
+        "$value": {
+          "value": 24,
+          "unit": "px"
+        },
+        "$description": "Espaçamento entre elementos.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--space-6"
+          }
+        }
+      },
+      "space-8": {
+        "$type": "dimension",
+        "$value": {
+          "value": 32,
+          "unit": "px"
+        },
+        "$description": "Módulo de composição.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--space-8"
+          }
+        }
+      },
+      "space-10": {
+        "$type": "dimension",
+        "$value": {
+          "value": 40,
+          "unit": "px"
+        },
+        "$description": "Espaçamento grande.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--space-10"
+          }
+        }
+      },
+      "space-12": {
+        "$type": "dimension",
+        "$value": {
+          "value": 48,
+          "unit": "px"
+        },
+        "$description": "Separação de grupos.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--space-12"
+          }
+        }
+      },
+      "space-19": {
+        "$type": "dimension",
+        "$value": {
+          "value": 76,
+          "unit": "px"
+        },
+        "$description": "Espaçamento XL do DESIGN.md.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--space-19"
+          }
+        }
+      },
+      "cover-min": {
+        "$type": "dimension",
+        "$value": {
+          "value": 110,
+          "unit": "px"
+        },
+        "$description": "Display de capa mínimo.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--cover-min"
+          }
+        }
+      },
+      "cover-max": {
+        "$type": "dimension",
+        "$value": {
+          "value": 340,
+          "unit": "px"
+        },
+        "$description": "Display de capa máximo.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--cover-max"
+          }
+        }
+      },
+      "showcase-min": {
+        "$type": "dimension",
+        "$value": {
+          "value": 65,
+          "unit": "px"
+        },
+        "$description": "Display de vitrine mínimo.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--showcase-min"
+          }
+        }
+      },
+      "showcase-max": {
+        "$type": "dimension",
+        "$value": {
+          "value": 138,
+          "unit": "px"
+        },
+        "$description": "Display de vitrine máximo.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--showcase-max"
+          }
+        }
+      }
+    },
+    "radius": {
+      "none": {
+        "$type": "dimension",
+        "$value": {
+          "value": 0,
+          "unit": "px"
+        },
+        "$description": "Raio none; dimensão DTCG, categoria radius.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--radius-none",
+            "category": "radius"
+          }
+        }
+      },
+      "xs": {
+        "$type": "dimension",
+        "$value": {
+          "value": 4,
+          "unit": "px"
+        },
+        "$description": "Raio xs; dimensão DTCG, categoria radius.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--radius-xs",
+            "category": "radius"
+          }
+        }
+      },
+      "inner": {
+        "$type": "dimension",
+        "$value": {
+          "value": 6,
+          "unit": "px"
+        },
+        "$description": "Raio inner; dimensão DTCG, categoria radius.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--radius-inner",
+            "category": "radius"
+          }
+        }
+      },
+      "outer": {
+        "$type": "dimension",
+        "$value": {
+          "value": 14,
+          "unit": "px"
+        },
+        "$description": "Raio outer; dimensão DTCG, categoria radius.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--radius-outer",
+            "category": "radius"
+          }
+        }
+      }
+    },
+    "duration": {
+      "fast": {
+        "$type": "duration",
+        "$value": {
+          "value": 160,
+          "unit": "ms"
+        },
+        "$description": "Duração fast.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--duration-fast"
+          }
+        }
+      },
+      "media": {
+        "$type": "duration",
+        "$value": {
+          "value": 450,
+          "unit": "ms"
+        },
+        "$description": "Duração media.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--duration-media"
+          }
+        }
+      },
+      "shimmer": {
+        "$type": "duration",
+        "$value": {
+          "value": 1400,
+          "unit": "ms"
+        },
+        "$description": "Duração shimmer.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--duration-shimmer"
+          }
+        }
+      }
+    },
+    "easing": {
+      "out": {
+        "$type": "cubicBezier",
+        "$value": [
+          0.2,
+          0.75,
+          0.25,
+          1
+        ],
+        "$description": "Resposta rápida e desaceleração precisa.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--ease-out"
+          }
+        }
+      },
+      "spring": {
+        "$type": "cubicBezier",
+        "$value": [
+          0.16,
+          1,
+          0.3,
+          1
+        ],
+        "$description": "Assentamento sem oscilação; nome histórico spring.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--ease-spring"
+          }
+        }
+      }
+    }
+  },
+  "semantic": {
+    "color": {
+      "paper": {
+        "$type": "color",
+        "$value": "{primitive.color.paper}",
+        "$description": "Campo dominante, passe-partout e texto invertido. 60%.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--paper"
+          }
+        }
+      },
+      "plate": {
+        "$type": "color",
+        "$value": "{primitive.color.plate}",
+        "$description": "Superfície técnica, skeleton e hover secundário.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--plate"
+          }
+        }
+      },
+      "ink": {
+        "$type": "color",
+        "$value": "{primitive.color.ink}",
+        "$description": "Texto principal, estrutura, abas ativas e versão. 30%.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--ink"
+          }
+        }
+      },
+      "muted": {
+        "$type": "color",
+        "$value": "{primitive.color.muted}",
+        "$description": "Texto secundário exclusivamente sobre papel.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--muted"
+          }
+        }
+      },
+      "line": {
+        "$type": "color",
+        "$value": "{primitive.color.line}",
+        "$description": "Bordas de inputs, seletores e botões secundários.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--line"
+          }
+        }
+      },
+      "action": {
+        "$type": "color",
+        "$value": "{primitive.color.action}",
+        "$description": "Exclusivo CTA primário e foco de teclado. Máximo 10%.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--action"
+          }
+        }
+      },
+      "error": {
+        "$type": "color",
+        "$value": "{primitive.color.error}",
+        "$description": "Impedimento: cotação stale, rede, validação e conflito.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--error"
+          }
+        }
+      },
+      "hair": {
+        "$type": "color",
+        "$value": "{primitive.color.hair}",
+        "$description": "Separador decorativo, não indica foco ou controle.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--hair"
+          }
+        }
+      }
+    },
+    "dimension": {
+      "gutter": {
+        "$type": "dimension",
+        "$value": "{primitive.dimension.gutter-min}",
+        "$description": "Margem fluida oficial; expressão CSS em extensão.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--gutter",
+            "cssExpression": "clamp(20px, 4.2vw, 72px)"
+          }
+        }
+      },
+      "cover": {
+        "$type": "dimension",
+        "$value": "{primitive.dimension.cover-min}",
+        "$description": "Escala fluida de capa do MIV.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--type-cover",
+            "cssExpression": "clamp(110px, 23vw, 340px)"
+          }
+        }
+      },
+      "showcase": {
+        "$type": "dimension",
+        "$value": "{primitive.dimension.showcase-min}",
+        "$description": "Escala fluida de vitrine do MIV.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--type-showcase",
+            "cssExpression": "clamp(65px, 9vw, 138px)"
+          }
+        }
+      }
+    },
+    "typography": {
+      "h1": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{primitive.font.display}",
+          "fontSize": {
+            "value": 72,
+            "unit": "px"
+          },
+          "fontWeight": 700,
+          "lineHeight": 0.9,
+          "letterSpacing": {
+            "value": -1.8,
+            "unit": "px"
+          }
+        },
+        "$description": "Estilo h1. ",
+        "$extensions": {
+          "archive.kronos": {
+            "textWrap": "balance"
+          }
+        }
+      },
+      "h2": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{primitive.font.display}",
+          "fontSize": {
+            "value": 48,
+            "unit": "px"
+          },
+          "fontWeight": 600,
+          "lineHeight": 0.98,
+          "letterSpacing": {
+            "value": -0.96,
+            "unit": "px"
+          }
+        },
+        "$description": "Estilo h2. ",
+        "$extensions": {
+          "archive.kronos": {
+            "textWrap": "balance"
+          }
+        }
+      },
+      "h3": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{primitive.font.display}",
+          "fontSize": {
+            "value": 27,
+            "unit": "px"
+          },
+          "fontWeight": 600,
+          "lineHeight": 1.1,
+          "letterSpacing": {
+            "value": 0,
+            "unit": "px"
+          }
+        },
+        "$description": "Estilo h3. ",
+        "$extensions": {
+          "archive.kronos": {
+            "textWrap": "balance"
+          }
+        }
+      },
+      "body": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{primitive.font.ui}",
+          "fontSize": {
+            "value": 14,
+            "unit": "px"
+          },
+          "fontWeight": 400,
+          "lineHeight": 1.65,
+          "letterSpacing": {
+            "value": 0,
+            "unit": "px"
+          }
+        },
+        "$description": "Estilo body. ",
+        "$extensions": {
+          "archive.kronos": {
+            "textWrap": "pretty"
+          }
+        }
+      },
+      "body-large": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{primitive.font.ui}",
+          "fontSize": {
+            "value": 16,
+            "unit": "px"
+          },
+          "fontWeight": 400,
+          "lineHeight": 1.65,
+          "letterSpacing": {
+            "value": 0,
+            "unit": "px"
+          }
+        },
+        "$description": "Estilo body-large. ",
+        "$extensions": {
+          "archive.kronos": {
+            "textWrap": "pretty"
+          }
+        }
+      },
+      "button": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{primitive.font.ui}",
+          "fontSize": {
+            "value": 12,
+            "unit": "px"
+          },
+          "fontWeight": 700,
+          "lineHeight": 1.2,
+          "letterSpacing": {
+            "value": 0,
+            "unit": "px"
+          }
+        },
+        "$description": "Estilo button. ",
+        "$extensions": {
+          "archive.kronos": {
+            "textWrap": "pretty"
+          }
+        }
+      },
+      "eth": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{primitive.font.mono}",
+          "fontSize": {
+            "value": 16,
+            "unit": "px"
+          },
+          "fontWeight": 400,
+          "lineHeight": 1.5,
+          "letterSpacing": {
+            "value": 0,
+            "unit": "px"
+          }
+        },
+        "$description": "Estilo eth. Features CSS obrigatórias: tnum 1, zero 1.",
+        "$extensions": {
+          "archive.kronos": {
+            "fontFeatureSettings": "\"tnum\" 1, \"zero\" 1",
+            "textWrap": "nowrap"
+          }
+        }
+      },
+      "register": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{primitive.font.mono}",
+          "fontSize": {
+            "value": 10,
+            "unit": "px"
+          },
+          "fontWeight": 400,
+          "lineHeight": 1.5,
+          "letterSpacing": {
+            "value": 0.3,
+            "unit": "px"
+          }
+        },
+        "$description": "Estilo register. Features CSS obrigatórias: tnum 1, zero 1.",
+        "$extensions": {
+          "archive.kronos": {
+            "fontFeatureSettings": "\"tnum\" 1, \"zero\" 1",
+            "textWrap": "nowrap"
+          }
+        }
+      },
+      "eyebrow": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{primitive.font.mono}",
+          "fontSize": {
+            "value": 11,
+            "unit": "px"
+          },
+          "fontWeight": 400,
+          "lineHeight": 1.5,
+          "letterSpacing": {
+            "value": 0.77,
+            "unit": "px"
+          }
+        },
+        "$description": "Estilo eyebrow. Features CSS obrigatórias: tnum 1, zero 1.",
+        "$extensions": {
+          "archive.kronos": {
+            "fontFeatureSettings": "\"tnum\" 1, \"zero\" 1",
+            "textWrap": "nowrap"
+          }
+        }
+      }
+    },
+    "border": {
+      "structure": {
+        "$type": "border",
+        "$value": {
+          "color": "{semantic.color.ink}",
+          "width": "{primitive.dimension.stroke}",
+          "style": "solid"
+        },
+        "$description": "Borda structure.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--border-structure"
+          }
+        }
+      },
+      "control": {
+        "$type": "border",
+        "$value": {
+          "color": "{semantic.color.line}",
+          "width": "{primitive.dimension.stroke}",
+          "style": "solid"
+        },
+        "$description": "Borda control.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--border-control"
+          }
+        }
+      },
+      "subtle": {
+        "$type": "border",
+        "$value": {
+          "color": "{semantic.color.hair}",
+          "width": "{primitive.dimension.stroke}",
+          "style": "solid"
+        },
+        "$description": "Borda subtle.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--border-subtle"
+          }
+        }
+      },
+      "error": {
+        "$type": "border",
+        "$value": {
+          "color": "{semantic.color.error}",
+          "width": "{primitive.dimension.stroke}",
+          "style": "solid"
+        },
+        "$description": "Borda error.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--border-error"
+          }
+        }
+      }
+    }
+  },
+  "component": {
+    "button": {
+      "background": {
+        "$type": "color",
+        "$value": "{semantic.color.paper}",
+        "$description": "Botão: background.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--button-background"
+          }
+        }
+      },
+      "foreground": {
+        "$type": "color",
+        "$value": "{semantic.color.ink}",
+        "$description": "Botão: foreground.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--button-foreground"
+          }
+        }
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{semantic.color.line}",
+        "$description": "Botão: border.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--button-border"
+          }
+        }
+      },
+      "hover": {
+        "$type": "color",
+        "$value": "{semantic.color.plate}",
+        "$description": "Botão: hover.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--button-hover"
+          }
+        }
+      },
+      "primary-background": {
+        "$type": "color",
+        "$value": "{semantic.color.action}",
+        "$description": "Botão: primary-background.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--button-primary-background"
+          }
+        }
+      },
+      "primary-foreground": {
+        "$type": "color",
+        "$value": "{semantic.color.paper}",
+        "$description": "Botão: primary-foreground.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--button-primary-foreground"
+          }
+        }
+      },
+      "ink-background": {
+        "$type": "color",
+        "$value": "{semantic.color.ink}",
+        "$description": "Botão: ink-background.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--button-ink-background"
+          }
+        }
+      },
+      "danger-foreground": {
+        "$type": "color",
+        "$value": "{semantic.color.error}",
+        "$description": "Botão: danger-foreground.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--button-danger-foreground"
+          }
+        }
+      },
+      "disabled-background": {
+        "$type": "color",
+        "$value": "{semantic.color.plate}",
+        "$description": "Botão: disabled-background.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--button-disabled-background"
+          }
+        }
+      },
+      "radius": {
+        "$type": "dimension",
+        "$value": "{primitive.radius.inner}",
+        "$description": "Raio de botão.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--button-radius"
+          }
+        }
+      },
+      "height": {
+        "$type": "dimension",
+        "$value": "{primitive.dimension.button-height}",
+        "$description": "Altura de botão.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--button-min-height"
+          }
+        }
+      },
+      "type": {
+        "$type": "typography",
+        "$value": "{semantic.typography.button}",
+        "$description": "Tipo de botão."
+      }
+    },
+    "frame": {
+      "padding": {
+        "$type": "dimension",
+        "$value": "{primitive.dimension.frame-padding}",
+        "$description": "frame: padding.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--frame-padding"
+          }
+        }
+      },
+      "radius": {
+        "$type": "dimension",
+        "$value": "{primitive.radius.none}",
+        "$description": "frame: radius.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--frame-radius"
+          }
+        }
+      },
+      "cut": {
+        "$type": "dimension",
+        "$value": "{primitive.dimension.cut}",
+        "$description": "frame: cut.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--frame-cut"
+          }
+        }
+      },
+      "border": {
+        "$type": "border",
+        "$value": "{semantic.border.structure}",
+        "$description": "frame: border.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--frame-border"
+          }
+        }
+      },
+      "background": {
+        "$type": "color",
+        "$value": "{semantic.color.paper}",
+        "$description": "frame: background.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--frame-background"
+          }
+        }
+      }
+    },
+    "input": {
+      "border": {
+        "$type": "border",
+        "$value": "{semantic.border.control}",
+        "$description": "input: border.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--input-border"
+          }
+        }
+      },
+      "radius": {
+        "$type": "dimension",
+        "$value": "{primitive.radius.inner}",
+        "$description": "input: radius.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--input-radius"
+          }
+        }
+      },
+      "error": {
+        "$type": "color",
+        "$value": "{semantic.color.error}",
+        "$description": "input: error.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--input-error"
+          }
+        }
+      }
+    },
+    "edition": {
+      "selected-background": {
+        "$type": "color",
+        "$value": "{semantic.color.plate}",
+        "$description": "edition: selected-background.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--edition-selected-background"
+          }
+        }
+      },
+      "selected-foreground": {
+        "$type": "color",
+        "$value": "{semantic.color.ink}",
+        "$description": "edition: selected-foreground.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--edition-selected-foreground"
+          }
+        }
+      },
+      "radius": {
+        "$type": "dimension",
+        "$value": "{primitive.radius.inner}",
+        "$description": "edition: radius.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--edition-radius"
+          }
+        }
+      }
+    },
+    "stepper": {
+      "height": {
+        "$type": "dimension",
+        "$value": "{primitive.dimension.touch}",
+        "$description": "stepper: height.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--stepper-height"
+          }
+        }
+      },
+      "radius": {
+        "$type": "dimension",
+        "$value": "{primitive.radius.inner}",
+        "$description": "stepper: radius.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--stepper-radius"
+          }
+        }
+      }
+    },
+    "badge": {
+      "version-background": {
+        "$type": "color",
+        "$value": "{semantic.color.ink}",
+        "$description": "badge: version-background.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--badge-version-background"
+          }
+        }
+      },
+      "version-foreground": {
+        "$type": "color",
+        "$value": "{semantic.color.paper}",
+        "$description": "badge: version-foreground.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--badge-version-foreground"
+          }
+        }
+      },
+      "radius": {
+        "$type": "dimension",
+        "$value": "{primitive.radius.none}",
+        "$description": "badge: radius.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--badge-radius"
+          }
+        }
+      }
+    },
+    "stale": {
+      "foreground": {
+        "$type": "color",
+        "$value": "{semantic.color.error}",
+        "$description": "stale: foreground.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--stale-foreground"
+          }
+        }
+      },
+      "background": {
+        "$type": "color",
+        "$value": "{semantic.color.paper}",
+        "$description": "stale: background.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--stale-background"
+          }
+        }
+      }
+    },
+    "skeleton": {
+      "background": {
+        "$type": "color",
+        "$value": "{semantic.color.plate}",
+        "$description": "skeleton: background.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--skeleton-background"
+          }
+        }
+      },
+      "duration": {
+        "$type": "duration",
+        "$value": "{primitive.duration.shimmer}",
+        "$description": "skeleton: duration.",
+        "$extensions": {
+          "archive.kronos": {
+            "css": "--skeleton-duration"
+          }
+        }
+      }
+    }
+  }
+}
